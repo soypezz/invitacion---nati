@@ -1,0 +1,169 @@
+
+body {
+    background: linear-gradient(to bottom, #f7b7d4, #ff009d); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Protest Riot", sans-serif;
+}
+
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(207, 0, 0);
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-style: italic;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:  rgb(207, 0, 0); /* Cambiar el color a rosa */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:rgb(240, 55, 55);
+}
+
+.info-container {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.info-container h1{
+    
+    font-size: 30px;
+    
+}
+
+.info-adicional p {
+    color: black;
+    font-weight: 600;
+}
+
+.modal-content p {
+    color: black;
+    font-weight: 600;
+}
+
+.video-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+
+.video-container video {
+    width: 50%;
+    height: auto;
+}
+
+#informacionAdicional {
+    background-color: lightyellow; 
+    border: 2px solid orange; 
+    padding: 20px;
+    margin-top: 10px; 
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.botonSi{
+    flex: 4;
+    padding: 10px 80px 10px 80px;
+    margin: 5px;
+}
+
+.botonNo{
+    flex: 1;
+    margin: 5px;
+
+}
+
+#siBtn {
+    background-color: green;
+    color: white; 
+    border: none;
+    cursor: pointer; 
+}
+
+#siBtn:hover {
+    background-color: rgb(21, 145, 21); 
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Estilos para el contenido del modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  /* Estilos para el botón de cerrar */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}

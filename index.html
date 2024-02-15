@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a la Sorpresa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="contenido">
+        <h1>Tengo una sorpresa para ti...</h1>
+        <p>¿Quieres verla?</p>
+        <button id="continuarBtn">Continuar</button>
+    </div>
+    <div class="confirmacion" id="confirmacion">
+        <p style="font-weight: bold;">¿ESTÁS SEGURO??? </p>
+        <P>Después no hay marcha atrás.</P>
+        <button id="confirmarBtn">Confirmar</button>
+    </div>
+    <div class="invitation-container" id="video">
+        <div class="video-container">
+            <video id="myVideo" controls>
+                <source src="hamburguesitas.mp4">
+            </video>
+        </div>
+        <div class="info-container"> 
+            <h1>¿Aceptas?</h1>
+            <div class="info-adicional" id="informacionAdicional">
+                <p>Fecha: mañana</p>
+                <p>Hora: 8:30 pm</p>
+                <p>Lugar: no puedes saberlo todo, ¿ok?</p>
+            </div>
+            <div class="buttons" id="buttonsContainer">
+                <button class="botonSi" id="siBtn">Obvio sii</button>
+                <button class="botonNo" id="noBtn">ño</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>CITA CONFIRMADA XOXO NOS VEMOS</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
